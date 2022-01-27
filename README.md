@@ -5,8 +5,9 @@ Code:
 rollDice(5);
 Expected Output: 3
 
-Test: "It should return true if the inputted string begins with the numbers 4, 5, 6, 34, or 37"
+Test: "If player rolls a 1, temporary score = 0"
 Code:
-const text = "3497912082710";
-ccValidator(text);
-Expected Output: true
+rollDice(5);
+
+> 1
+> Expected Output: temporaryScore = 0
