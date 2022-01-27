@@ -56,7 +56,7 @@ $(document).ready(function () {
 		$(".turnTotal1").html("0");
 		$(".roll1").html("0");
 		$(".grandTotal1").html(player1.totalScore);
-	})
+	});
 
 // Player 2
 	$('button#rollP2').click(function (event) {
