@@ -6,29 +6,42 @@
 	<link href="css/styles.css" rel="stylesheet" type="text/css" />
 	<script src="js/jquery-3.6.0.js"></script>
 	<script src="js/scripts.js"></script>
-	<title>Document</title>
+	<title>PIG DICE</title>
 </head>
 
 <body>
 	<div class="container">
 		<h1>Pig Dice! oink!</h1>
-		<div id="Player1">
-			<h2>Player 1</h2>
-			<br>
-			<button id="rollP1" type="button">Roll</button>
-			<button id="hold" type="button">Hold</button>
+		<div class="card">
+			<div class="card-body">
+				<br>
+				<h2 class="card-title">Player 1</h2>
+				<br>
+				<p id="p1" class ="card-text">
+				<button id="rollP1" class="btn btn-success">Roll</button>
+				<button id="holdP1" class="btn btn-outline-warning">Hold</button>
+				<br>
+				<br>
+				<br>Roll: <span class="roll1"></span>
+				<br>Turn Total: <span class="turnTotal1"></span>
+				<br>Grand Total: <span class="grandTotal1"></span></p>
+			</div>
 		</div>
-		<div id="Player2">
-			<h2>Player 2</h2>
-			<br>
-			<button id="rollP2" type="button">Roll</button>
-			<button id="hold" type="button">Hold</button>
-			<br>
-			<br>
-		</div>
-		<div id="resultsPlayer1">
-		</div>
-		<div id="resultsPlayer2">
+		<div class="card">
+			<div class="card-body">
+				<br>
+				<h2 class="card-title">Player 2</h2>
+				<br>
+				<p id="p2" class ="card-text">
+				<button id="rollP2" class="btn btn-success">Roll</button>
+				<button id="holdP2" class="btn btn-outline-warning">Hold</button>
+				<br>
+				<br>
+				<br>Roll: <span class="roll2"></span>
+				<br>Turn Total: <span class="turnTotal2"></span>
+				<br>Grand Total: <span class="grandTotal2"></span></p>
+				<ul></ul></p>
+			</div>
 		</div>
 	</div>
 </body>
