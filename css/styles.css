@@ -1,0 +1,21 @@
+#Player1 {
+  float: left;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-bottom: 200px;
+}
+
+#Player2 {
+  float: left;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-bottom: 200px;
+}
+
+#resultsPlayer1 {
+  margin-top: 400px;
+}
+
+#resultsPlayer2 {
+  margin-top: 400px;
+}

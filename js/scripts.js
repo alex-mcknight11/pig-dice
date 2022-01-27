@@ -1,17 +1,14 @@
 // BUSINESS LOGIC
 
-function Player(turn) {
+function Player() {
 	this.roll = 0;
 	this.tempScore = 0;
-	this.totalscore = 0;
-	this.turn = turn;
-	this.playerName;
+	this.totalScore = 0;
 }
 
 let rollDice = function () {
 	return Math.floor(Math.random() * 6) + 1;
 };
-// console.log(rollDice());
 
 Player.prototype.rollPoints = function () {
 	if (this.roll === 1) {
@@ -22,30 +19,28 @@ Player.prototype.rollPoints = function () {
 	}
 };
 
-Player.prototype.singleRoll = function () {
-	this.roll = rollDice();
-	this.rollPoints();
-};
-
 Player.prototype.hold = function () {
-	this.totalscore += this.tempScore;
+	this.totalScore += this.tempScore;
 	this.tempScore = 0;
 };
 
-//if (Player.rolls === 1) {
-//temporaryScore = 0;
-//}
+// Player.prototype.singleRoll = function () {
+// 	this.roll = rollDice();
+// 	this.rollPoints();
+// };
+
 
 let player1 = new Player();
+let player2 = new Player();
 
 $(document).ready(function () {
-	$('button#roll').click(function (event) {
+	$('button#rollP1').click(function (event) {
 		event.preventDefault();
 		player1.roll = rollDice();
-		$('#rollDisplay').text(rollDice());
-		player1.singleRoll();
-		return Player.this.tempScore();
+		$('#resultsPlayer1').text(rollDice());
+		player1.rollPoints();
 	});
+	console.log(player1.roll);
 });
 // UI LOGIC
 
